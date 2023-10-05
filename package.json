@@ -1,0 +1,70 @@
+{
+  "name": "json-stable-parse",
+  "version": "1.0.0",
+  "description": "Parses json recursively",
+  "main": "dist/jsonParse.cjs.js",
+  "module": "dist/jsonParse.esm.js",
+  "unpkg": "dist/jsonParse.umd.min.js",
+  "jsdelivr": "dist/jsonParse.umd.min.js",
+  "types": "dist/types/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "torus-scripts start",
+    "build": "torus-scripts build",
+    "release": "torus-scripts release",
+    "lint:ts": "eslint --fix 'src/**/*.ts'",
+    "prepack": "npm run build",
+    "test": "mocha ./test/test.ts",
+    "prepare": "husky install"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "json",
+    "parse",
+    "recursive"
+  ],
+  "author": "Chaitanya Potti",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/register": "^7.22.15",
+    "@toruslabs/config": "^2.0.2",
+    "@toruslabs/eslint-config-node": "^3.0.1",
+    "@toruslabs/torus-scripts": "^5.0.5",
+    "@types/mocha": "^10.0.2",
+    "@types/node": "^20",
+    "eslint": "^8.50.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "mocha": "^10.2.0",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "lint-staged": {
+    "!(*d).{js,ts}": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=18.x",
+    "npm": ">=9.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaitanyapotti/json-stable-parse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chaitanyapotti/json-stable-parse/issues"
+  },
+  "homepage": "https://github.com/chaitanyapotti/json-stable-parse#readme"
+}

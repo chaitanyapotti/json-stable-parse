@@ -1,0 +1,6 @@
+{
+  "require": ["./test/setup.mjs"],
+  "timeout": 0,
+  "exit": true,
+  "extension": "ts"
+}
