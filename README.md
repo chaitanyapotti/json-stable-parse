@@ -50,8 +50,6 @@ unpkg
 
 Add [`json-stable-parse`](https://www.npmjs.com/package/json-stable-parse) to your project:
 
-To allow your web app to retrieve keys:
-
 Install the package
 `npm i json-stable-parse`
 or
@@ -59,5 +57,4 @@ or
 
 ## Requirements
 
-- This package requires a peer dependency of `@babel/runtime`
 - Node 18+
