@@ -1,6 +1,6 @@
 # json-stable-parse
 
-![Build Status](https://github.com/chaitanyapotti/json-stable-parse/actions/workflows/master.yml/badge.svg)
+![Build Status](https://github.com/chaitanyapotti/json-stable-parse/actions/workflows/ci.yml/badge.svg)
 
 [![npm downloads](https://img.shields.io/npm/dm/json-stable-parse.svg?style=flat-square)](https://www.npmjs.com/package/json-stable-parse)
 
