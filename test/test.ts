@@ -1,6 +1,6 @@
 import assert from "assert";
 
-import { recursiveJSONParse } from "../src/index";
+import recursiveJSONParse from "../src/index";
 
 const inputs = [
   '{"options":{"clientId":"ab","whiteLabel":"{\\"appName\\":\\"Sample App\\",\\"defaultLanguage\\":\\"de\\",\\"mode\\":\\"dark\\",\\"theme\\":{\\"primary\\":\\"#123456\\"},\\"useLogoLoader\\":true}","loginConfig":"{\\"google\\":{\\"clientId\\":\\"a\\",\\"mainOption\\":false,\\"showOnDesktop\\":true,\\"showOnMobile\\":true,\\"showOnModal\\":true,\\"typeOfLogin\\":\\"google\\",\\"verifier\\":\\"google-demo\\"}}","buildEnv":"testing"},"params":{"loginProvider":"google","redirectUrl":"a"},"actionType":"login"}',
@@ -66,6 +66,7 @@ const outputs = [
 ];
 
 describe("JSON Parse", function () {
+  // eslint-disable-next-line mocha/no-setup-in-describe
   inputs.forEach((str, index) => {
     it(`test case ${index}`, function () {
       const res = recursiveJSONParse(str);

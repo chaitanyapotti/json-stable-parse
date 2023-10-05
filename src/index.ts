@@ -1,4 +1,4 @@
-export function recursiveJSONParse(val: unknown): unknown {
+export default function recursiveJSONParse(val: unknown): unknown {
   try {
     const json = typeof val === "string" ? JSON.parse(val) : val;
     if (typeof json === "number" || typeof json === "bigint" || typeof json === "boolean") return val;
